@@ -1,0 +1,34 @@
+{
+    "computers": [
+        {
+            "id": 1,
+            "accountId": null,
+            "status": true
+        },
+        {
+            "id": 2,
+            "accountId": null,
+            "status": true
+        },
+        {
+            "id": 3,
+            "accountId": null,
+            "status": false
+        },
+        {
+            "id": 4,
+            "accountId": null,
+            "status": false
+        },
+        {
+            "id": 5,
+            "accountId": null,
+            "status": false
+        },
+        {
+            "id": 6,
+            "accountId": null,
+            "status": false
+        }
+    ]
+}
