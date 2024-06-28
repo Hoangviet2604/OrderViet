@@ -1,34 +1,110 @@
 {
-    "computers": [
-        {
-            "id": 1,
-            "accountId": null,
-            "status": true
-        },
-        {
-            "id": 2,
-            "accountId": null,
-            "status": true
-        },
-        {
-            "id": 3,
-            "accountId": null,
-            "status": false
-        },
-        {
-            "id": 4,
-            "accountId": null,
-            "status": false
-        },
-        {
-            "id": 5,
-            "accountId": null,
-            "status": false
-        },
-        {
-            "id": 6,
-            "accountId": null,
-            "status": false
-        }
-    ]
+  "computers": [
+    {
+      "id": "1",
+      "accountId": null,
+      "status": true
+    },
+    {
+      "id": "2",
+      "accountId": null,
+      "status": true
+    },
+    {
+      "id": "3",
+      "accountId": null,
+      "status": false
+    },
+    {
+      "id": "4",
+      "accountId": null,
+      "status": false
+    },
+    {
+      "id": "5",
+      "accountId": null,
+      "status": false
+    },
+    {
+      "id": "6",
+      "accountId": null,
+      "status": false
+    },
+    {
+      "id": "7",
+      "accountId": null,
+      "status": false
+    },
+    {
+      "id": "8",
+      "accountId": null,
+      "status": false
+    },
+    {
+      "id": "9",
+      "accountId": null,
+      "status": false
+    },
+    {
+      "id": "10",
+      "accountId": null,
+      "status": false
+    },
+    {
+      "id": "11",
+      "accountId": null,
+      "status": false
+    },
+    {
+      "id": "12",
+      "accountId": null,
+      "status": true
+    }
+  ],
+  "food": [
+    {
+      "id": "1",
+      "name": "Lemon Drink",
+      "price": 1,
+      "img": "../images/soft-drink.png"
+    },
+    {
+      "id": "2",
+      "name": "Coca-Cola",
+      "price": 1.5,
+      "img": "../images/cola.png"
+    },
+    {
+      "id": "3",
+      "name": "Pepsi",
+      "price": 1.5,
+      "img": "../images/can.png"
+    },
+    {
+      "id": "4",
+      "name": "Ramen",
+      "price": 2.5,
+      "img": "../images/ramen.png"
+    },
+    {
+      "id": "5",
+      "name": "Fried rice",
+      "price": 3,
+      "img": "../images/fried-rice.png"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "12345",
+      "time": 120
+    },
+    {
+      "username": "Ti thanh",
+      "password": "12345",
+      "time": 240,
+      "id": "1400"
+    }
+  ]
 }

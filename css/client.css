@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+hr {
+    margin: 0;
+}
+body {
+    height: 100vh;
+    background-image: url(../images/448662154_1243188803508774_6405567158314327837_n.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    .gcafe {
+        width: 15%;
+        .gcafe-header {
+            background-color: rgb(56, 49, 49);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            h5 {
+                color: white;
+            }
+            .icon-right {
+                span {
+                    color: green;
+                }
+                i {
+                    color: white;
+                }
+            }
+        }
+        .gcafe-main {
+            padding: 5px;
+            background: #f3f3f3;
+            .gcafe-son-liem {
+                background-color: white;
+                padding: 5px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                .row {
+                    label {
+                        font-size: 10px;
+                    }
+                    input {
+                       font-size: 10px;
+                    }
+                }
+            }
+            .gcafe-ti-liems {
+                .son-top {
+                    
+                }
+            }
+        }
+        
+    }
+}

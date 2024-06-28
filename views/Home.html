@@ -93,24 +93,107 @@
                 </div>
             </div>
 
-            <div class="right-main">
+            <div class="right-main py-3">
                 <div class="box">
                     <h3>Dashboard</h3>
                 </div>
+                <div class="box container">
+
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 laptop "> </div>
+
+                </div>
+                <div class="box container">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 food ">
+
+                    </div>
+                </div>
                 <div class="box">
-                    <div class="container ">
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 laptop ">
-                         
+                    <nav class="navbar navbar-light bg-light nav">
+                        <div class="container-fluid">
+                            <a class="navbar-brand">List Accounts</a>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Add</button>
+                            </form>
+                        </div>
+                    </nav>
+                    <div class="acc container mt-5">
+                        <div class="number">#</div>
+                        <div class="name">Name Accounts</div>
+                        <div class="desc">Description</div>
+                        <div class="action">Action</div>
+                    </div>
+                </div>
+                <div class="box container">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <h3>List Accounts</h3>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="username..."
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn btn-outline-secondary" type="button"
+                                    id="button-addon2">Search</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 text-end">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" onclick="resetAccount()"
+                                data-bs-target="#addAccount">Add Account</button>
+                        </div>
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Username</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody id="accounttable"></tbody>
+                      </table>
+                </div>
+            </div>
+
+            <!-- Modal add account -->
+            <div class="modal fade" id="addAccount" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="titleAccount">Add Account</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="usernameAccount"
+                                        placeholder="Enter your username">
+                                    <label for="floatingInput">Username</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="passwordAccount"
+                                        placeholder="Password">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="number" class="form-control" id="priceAccount" placeholder="Price">
+                                    <label for="floatingPassword">Price</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button onclick="addAccount()" id="btn-account" type="button" class="btn btn-primary">Save Account</button>
                         </div>
                     </div>
                 </div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
             </div>
-
             <script src="../js/api.js"> </script>
+            <script src="../js/getAccounts.js"></script>
             <script src="../js/getComputers.js"></script>
+            <script src="../js/getFood.js"></script>
             <script src="../js/Home.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
                 integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
