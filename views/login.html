@@ -12,27 +12,31 @@
 </head>
 
 <body>
-    <form action="">
+    <form action="" >
         <h4>Gcafe+ SonLiem</h4>
         <div class="form-groups">
             <h5>Nhập tên người sử dụng và mật mã</h5>
             <div class="group">
                 <label for="">Tên Người sử dụng:</label>
-                <input type="text" placeholder="Enter your username">
+                <input type="text" id="username" placeholder="Enter your username">
             </div>
             <div class="group">
                 <label for="">Mật mã</label>
-                <input type="text" placeholder="Enter your password">
+                <input type="password" id="password" placeholder="Enter your password">
             </div>
             <div class="group">
                 <div class="lo"></div>
                 <div class="login">
-                    <button><i class="fa-solid fa-check"></i> Đăng Nhập</button>
+                    <button id="login" ><i class="fa-solid fa-check"></i> Đăng Nhập</button>
                     <button><i class="fa-solid fa-xmark"></i> Đóng</button>
                 </div>          
             </div>
         </div>
     </form>
+    <script src="../js/api.js"></script>
+    <script src="../js/getAccounts.js"></script>
+    <script src="../js/login.js"></script>
+   
 </body>
 
 </html>

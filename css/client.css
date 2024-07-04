@@ -27,9 +27,10 @@ body {
     background-size: 100% 100%;
     display: flex;
     justify-content: end;
-    align-items: start;
+    overflow: hidden;
     .gcafe {
         width: 15%;
+        margin-top: 5px;
         .gcafe-header {
             background-color: rgb(56, 49, 49);
             display: flex;
@@ -66,9 +67,34 @@ body {
                 }
             }
             .gcafe-ti-liems {
-                .son-top {
-                    
+                .win {
+                    text-align: center;
+                    .col {
+                        h6 {
+                            font-size: 10px;                          
+                        }
+                        i {
+                            color: rgb(44, 151, 227);
+                        }
+                    }
                 }
+                .window {           
+                        display: flex;
+                        justify-content: space-between;
+                        align-items:center;
+                        .cua {
+                            display: flex;
+                        }
+                        h6 {
+                            font-size: 12px;
+                            margin-left: 5px;                         
+                        } 
+                        button {
+                            font-size: 10px;
+                            margin: 0;
+                        }
+                }
+
             }
         }
         

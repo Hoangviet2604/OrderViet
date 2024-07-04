@@ -14,6 +14,7 @@ function addAccount() {
     const account =  {
         username: username ,
         password: password,
+        role: "user",
         time : time
     }
 
@@ -38,7 +39,7 @@ function displayAccounts(data) {
         item.innerHTML = `
          <th scope="row">${index + 1}</th>
                             <td>${element.username}</td>
-                            <td>0${hours} : ${minutes}0</td>
+                            <td>0${hours} : 0${minutes}</td>
                             <td>
                                 <button onclick="editAccount(${element.id})" type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#addAccount">
