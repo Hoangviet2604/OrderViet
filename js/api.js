@@ -31,13 +31,13 @@ function add(url,object) {
       })
       .catch(error => console.error('Lỗi khi cập nhật đơn hàng', error));
 }
-function edit(url,id,order) {
+function edit(url,id,object) {
     fetch(`${url}/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(order),
+        body: JSON.stringify(object),
       })
       .then(response => response.json())
       .then(data => {

@@ -99,14 +99,16 @@
       "username": "admin",
       "password": "12345",
       "role": "admin",
-      "time": 120
+      "time": 120,
+      "timeplay": 0
     },
     {
       "id": "4444",
       "username": "sonliem",
       "password": "12345",
       "role": "user",
-      "time": 300
+      "time": 300,
+      "timeplay": 29
     }
   ]
 }
