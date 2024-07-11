@@ -1,7 +1,7 @@
 var urlComputer = "http://localhost:3000/computers";
 var urlFood = "http://localhost:3000/food";
 var urlAccount = "http://localhost:3000/accounts";
-
+var urlOrder = "http://localhost:3000/orders";
 function get(url,displayData) {
     fetch(url)
     .then((reponse) => reponse.json())

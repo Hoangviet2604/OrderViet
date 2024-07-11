@@ -1,7 +1,9 @@
 get(urlFood, displayFood);
 
-function displayFood(data) {
+let foods;
 
+function displayFood(data) {
+      foods = data;
     var food = document.querySelector(".food");
 
     data.forEach(element => {

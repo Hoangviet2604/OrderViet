@@ -63,11 +63,11 @@
                         <i class="fa-solid fa-envelope"></i>
                         <h6>Tin Nhắn</h6>
                     </div>
-                    <div class="col">
+                    <div class="col" data-bs-toggle="modal" data-bs-target="#dichvu">
                         <i class="fa-solid fa-bell-concierge"></i>
                         <h6>Dịch vụ</h6>
                     </div>
-                    <div class="col">
+                    <div class="col" onclick="logout()">
                         <i class="fa-solid fa-arrow-right-from-bracket"></i>
                         <h6>Đăng xuất</h6>
                     </div>
@@ -115,8 +115,30 @@
 
     </div>
 
+    <!-- Modal service  -->
+<div class="modal fade" id="dichvu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Dịch Vụ</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row row-cols-4 foods g-2">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" onclick="orderService()" class="btn btn-primary">Order Service</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
     <script src="../js/api.js"></script>
     <script src="../js/login.js"></script>
+    <script src="../js/getFoodClient.js"></script>
     <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
